@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="form-group">
+        <label for="n">Nhập N</label>
+        <input type="text" class="form-control" [(ngModel)]="n">
+    </div>
+    <div>
+        <button class="btn btn-primary" (click)="tinh()">Tính</button>
+    </div>
+    <ul>
+        <li *ngFor="let i of fibs; index as index">{{index + 1}}:{{i}}</li>
+    </ul>
+</div>
